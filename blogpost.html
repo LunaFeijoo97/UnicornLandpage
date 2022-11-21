@@ -5,9 +5,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lunita's Blogpost</title>
+    <title>Lunita's Landpage</title>
   </head>
   <body>
+    <iframe src="" allow="autoplay" id="audio" hidden></iframe>
     <div id="container">
       <div id="post">
         <h1>Here one day there will be a blog post... one day</h1>
@@ -15,7 +16,7 @@
       </div>
     </div>
     <div>
-      <img src="unicorn.png" alt="Unicorn" />
+      <img id="unicorn" src="unicorn.png" alt="Unicorn_img" />
     </div>
     <div id="unicorn-subtext">
       <p>Nom nom nom, I'm too busy eating right now. Come back later</p>
@@ -24,10 +25,11 @@
     <br />
     <button
       id="btn"
-      onclick="changeBackground();changeHeader();changeFooter();changeBtn();"
+      onclick="changeBackground();changeHeader();changeFooter();changeBtn();changeUnicorn();changeMusic();"
     >
       Come on, don't be shy, click me
     </button>
+    <br />
     <div id="footer">GTFO now, 'mkay?</div>
     <script></script>
     <script src="index.js"></script>

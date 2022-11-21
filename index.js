@@ -41,3 +41,25 @@ function changeBtn() {
   btn.style.backgroundColor = btnColors[colorsIndexes];
   colorsIndexes++;
 }
+
+var unicornState = ["yawn.png", "unicorn.png"];
+var stateIndex = 0;
+function changeUnicorn() {
+  var uni = document.getElementById("unicorn");
+  if (stateIndex >= unicornState.length) {
+    stateIndex = 0;
+  }
+  uni.src = unicornState[stateIndex];
+  stateIndex++;
+}
+
+var songState = ["2.mp3", ""];
+var songIndex = 0;
+function changeMusic() {
+  var song = document.getElementById("audio");
+  if (songIndex >= songState.length) {
+    songIndex = 0;
+  }
+  song.src = songState[songIndex];
+  songIndex++;
+}
